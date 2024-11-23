@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rwalking
+  m_Name: Lidle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,19 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 5976268283644960879, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
-    - time: 0.25
-      value: {fileID: 2055268207351813252, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
+      value: {fileID: -1247736005, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
     - time: 0.5
-      value: {fileID: -8394108066004109974, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
-    - time: 0.75
-      value: {fileID: -5762042234010943849, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
+      value: {fileID: -1932934909, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 4
+  m_SampleRate: 2
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -50,10 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 5976268283644960879, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
-    - {fileID: 2055268207351813252, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
-    - {fileID: -8394108066004109974, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
-    - {fileID: -5762042234010943849, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
+    - {fileID: -1247736005, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
+    - {fileID: -1932934909, guid: 50f8c40b69885624d93a66a7a9a70537, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
