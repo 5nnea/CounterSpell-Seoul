@@ -7,6 +7,10 @@ public class RedButton : MonoBehaviour
     Animator anim;
     [SerializeField]GameObject target;
 
+    [SerializeField]float x;
+    [SerializeField]float y;
+    [SerializeField]float time;
+
     void Start(){
         anim = GetComponent<Animator>();
     }
@@ -21,6 +25,6 @@ public class RedButton : MonoBehaviour
     }
 
     public void FinishEvents(){
-        target.gameObject.transform.DOMoveY(-2,1.5f);
+        target.gameObject.transform.DOMove(new Vector3(x,y,0),time);
     }
 }

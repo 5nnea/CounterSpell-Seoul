@@ -33,11 +33,24 @@ public class LeftCharacterController : MonoBehaviour
             }
 
         }
-        else
-        {
+        else if(Input.GetMouseButton(1)){
+            GameManager.Instance.isMouseActive = true; // 마우스 조작 활성화
+            mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if(GameManager.Instance.SkillUseAble >0){
+                if(mousePosition.x - transform.position.x <0){
+                    transform.position -= new Vector3(2f,0,0);
+                }
+                else if(mousePosition.x - transform.position.x>0){
+                    transform.position += new Vector3(2f,0,0);
+                }
+                GameManager.Instance.SkillUseAble --;
+            }
+        }
+        else{
             GameManager.Instance.isMouseActive = false; // 마우스 조작 비활성화
             anim.SetBool("P_Lwalking",false);
             anim.SetBool("P_Rwalking",false);
         }
+        
     }
 }

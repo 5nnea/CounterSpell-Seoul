@@ -8,6 +8,7 @@ public class GameManager : Singleton<GameManager>
     public bool isPause = false;
     public bool isKeyboardActive = false;
     public bool isMouseActive = false;
+    public int SkillUseAble = 1;
 
     [SerializeField] FadePanel fadePanel;
     [SerializeField] GameObject canvas;
@@ -19,6 +20,7 @@ public class GameManager : Singleton<GameManager>
     public void ChangerScene(int num){
         UiManager.Instance.settingWindow.DOAnchorPosY(1100,0.3f);
         fadePanel.FadeOut();
+        SkillUseAble = 1;
         nextSceneNum = num;
     }
 
