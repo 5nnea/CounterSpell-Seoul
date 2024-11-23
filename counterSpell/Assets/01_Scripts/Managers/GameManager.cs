@@ -6,6 +6,8 @@ public class GameManager : Singleton<GameManager>
 {
     public int nextSceneNum;
     public bool isPause = false;
+    public bool isKeyboardActive = false;
+    public bool isMouseActive = false;
 
     [SerializeField] FadePanel fadePanel;
     [SerializeField] GameObject canvas;
