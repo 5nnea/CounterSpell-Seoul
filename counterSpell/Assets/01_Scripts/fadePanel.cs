@@ -13,6 +13,7 @@ public class FadePanel : MonoBehaviour
     }
 
     public void FadeOut(){
+        GameManager.Instance.isPause = true;
         this.gameObject.SetActive(true);
         fade.SetBool("fadeOut",true);
     }
@@ -26,5 +27,6 @@ public class FadePanel : MonoBehaviour
     public void FinishFade(){
         fade.SetBool("fadeIn",false);
         this.gameObject.SetActive(false);
+        UiManager.Instance.ShowStageNum();
     }
 }
