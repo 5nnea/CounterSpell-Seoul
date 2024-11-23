@@ -286,6 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageText: {fileID: 699437017}
+  stageNum: {fileID: 1097080158}
   retryBtn: {fileID: 1680912007}
   UiCanvas: {fileID: 1087569704}
   settingWindow: {fileID: 0}

@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpForce: 3
+  jumpForce: 7
 --- !u!95 &3925895220166418777
 Animator:
   serializedVersion: 7
