@@ -7,6 +7,7 @@ public class RightCharacterController : MonoBehaviour
     public bool isKeyboardActive = false; // 키보드 조작 상태
 
     private Rigidbody2D rb;
+    private float move;
 
     void Start()
     {
@@ -16,7 +17,9 @@ public class RightCharacterController : MonoBehaviour
     void Update()
     {
         // 키보드 이동 (A, D)
-        float move = Input.GetAxis("Horizontal");
+        move = Input.GetAxis("Horizontal");
+        Debug.Log(move);
+        
         if (move != 0)
         {
             transform.Translate(new Vector3(move * moveSpeed * Time.deltaTime, 0, 0));
