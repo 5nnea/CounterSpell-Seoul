@@ -9,6 +9,7 @@ using TMPro;
 public class UiManager : Singleton<UiManager>
 {
     [SerializeField]TMP_Text stageText;
+    [SerializeField]RectTransform stageNum;
     [SerializeField]GameObject retryBtn;
     [SerializeField]GameObject UiCanvas;
 
@@ -35,14 +36,14 @@ public class UiManager : Singleton<UiManager>
 
     public void ShowStageNum(){
         stageText.text = "stage " + SceneManager.GetActiveScene().buildIndex.ToString();
-        stageText.rectTransform.DOAnchorPosY(700,0f);
-        stageText.rectTransform.DOAnchorPosY(0,0.6f).SetEase(Ease.OutBack).OnComplete(HideStageNum);
+        stageNum.DOAnchorPosY(700,0f);
+        stageNum.DOAnchorPosY(0,0.6f).SetEase(Ease.OutBack).OnComplete(HideStageNum);
     }
     private void HideStageNum(){
         Invoke("degi",1f);
     }
     private void degi(){
-        stageText.rectTransform.DOAnchorPosY(-700,0.3f);
+        stageNum.DOAnchorPosY(-700,0.3f);
         GameManager.Instance.isPause = false;
     }
   
