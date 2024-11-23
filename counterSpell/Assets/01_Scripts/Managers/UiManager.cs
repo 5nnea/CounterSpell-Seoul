@@ -15,12 +15,6 @@ public class UiManager : Singleton<UiManager>
     public RectTransform settingWindow;
     
     void Start(){
-        if(SceneManager.GetActiveScene().buildIndex == 0){
-            retryBtn.SetActive(false);
-        }
-        else{
-            retryBtn.SetActive(true);
-        }
         stageText.text = "";
         settingWindow = UiCanvas.transform.GetChild(0).GetComponent<RectTransform>();
     }
@@ -48,7 +42,7 @@ public class UiManager : Singleton<UiManager>
         Invoke("degi",1f);
     }
     private void degi(){
-        stageText.rectTransform.DOAnchorPosY(-700,0.4f);
+        stageText.rectTransform.DOAnchorPosY(-700,0.3f);
         GameManager.Instance.isPause = false;
     }
   

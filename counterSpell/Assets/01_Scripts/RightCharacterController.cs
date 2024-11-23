@@ -15,9 +15,9 @@ public class RightCharacterController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D)){
+        if(Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D)||Input.GetKeyDown(KeyCode.Space)){
             Debug.Log("키보드 눌림");
             GameManager.Instance.isKeyboardActive = true; // 키보드 조작 활성화
         }
@@ -42,6 +42,10 @@ public class RightCharacterController : MonoBehaviour
                     anim.SetBool("C_Lwalking",false);
                     anim.SetBool("C_Rwalking",true);
                 }
+            }
+            else{
+                anim.SetBool("C_Lwalking",false);
+                anim.SetBool("C_Rwalking",false);
             }
 
         }

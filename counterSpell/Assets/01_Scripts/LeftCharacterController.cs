@@ -11,7 +11,7 @@ public class LeftCharacterController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // 마우스 좌클릭: 이동
         if (Input.GetMouseButton(0))
