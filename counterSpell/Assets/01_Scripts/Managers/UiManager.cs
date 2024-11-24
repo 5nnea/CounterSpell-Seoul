@@ -10,7 +10,7 @@ public class UiManager : Singleton<UiManager>
 {
     [SerializeField]TMP_Text stageText;
     [SerializeField]RectTransform stageNum;
-    [SerializeField]GameObject retryBtn;
+    public GameObject retryBtn;
     [SerializeField]GameObject UiCanvas;
 
     public RectTransform settingWindow;
@@ -24,6 +24,12 @@ public class UiManager : Singleton<UiManager>
     public void ShowSettingWindow(){
         if(GameManager.Instance.isPause == false){   
             settingWindow.DOAnchorPosY(0,0.3f);
+        }
+    }
+
+    public void HideSettingWindow(){
+        if(GameManager.Instance.isPause == false){   
+            settingWindow.DOAnchorPosY(1100,0.3f);
         }
     }
 

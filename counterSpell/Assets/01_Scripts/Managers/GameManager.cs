@@ -21,6 +21,7 @@ public class GameManager : Singleton<GameManager>
         UiManager.Instance.settingWindow.DOAnchorPosY(1100,0.3f);
         fadePanel.FadeOut();
         SkillUseAble = 1;
+        UiManager.Instance.retryBtn.SetActive(true);
         nextSceneNum = num;
     }
 
