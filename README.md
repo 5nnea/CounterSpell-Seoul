@@ -1,2 +1,2 @@
-# CounterSpell2
-카운터스펠
+# CounterSpell : Seoul
+카운터스펠 게임 해커톤
