@@ -27,6 +27,7 @@ public class FadePanel : MonoBehaviour
     public void FinishFade(){
         fade.SetBool("fadeIn",false);
         this.gameObject.SetActive(false);
-        UiManager.Instance.ShowStageNum();
+        if(SceneManager.GetActiveScene().name != "Ending")
+            UiManager.Instance.ShowStageNum();
     }
 }

@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+    using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
@@ -36,14 +36,14 @@ public class UiManager : Singleton<UiManager>
 
     public void ShowStageNum(){
         stageText.text = "stage " + SceneManager.GetActiveScene().buildIndex.ToString();
-        stageNum.DOAnchorPosY(700,0f);
+        stageNum.DOAnchorPosY(900,0f);
         stageNum.DOAnchorPosY(0,0.6f).SetEase(Ease.OutBack).OnComplete(HideStageNum);
     }
     private void HideStageNum(){
         Invoke("degi",1f);
     }
     private void degi(){
-        stageNum.DOAnchorPosY(-700,0.3f);
+        stageNum.DOAnchorPosY(-900,0.3f);
         GameManager.Instance.isPause = false;
     }
   

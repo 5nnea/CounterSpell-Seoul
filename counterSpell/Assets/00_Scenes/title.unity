@@ -579,7 +579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stage 1-1
+  m_text: Stage 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9cd97ba394bc6647b5b5ded5a9b1491, type: 2}
   m_sharedMaterial: {fileID: 114342957274124616, guid: d9cd97ba394bc6647b5b5ded5a9b1491, type: 2}
@@ -985,8 +985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 700}
-  m_SizeDelta: {x: 770, y: 190}
+  m_AnchoredPosition: {x: 0, y: 900}
+  m_SizeDelta: {x: 687.5, y: 425}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097080159
 MonoBehaviour:
@@ -1001,14 +1001,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.46431115, g: 0.4945256, b: 0.6981132, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -7448011870003641771, guid: 8f78b68289973034a8be8bb0c0833079, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1294,6 +1294,7 @@ MonoBehaviour:
   isPause: 0
   isKeyboardActive: 0
   isMouseActive: 0
+  SkillUseAble: 1
   fadePanel: {fileID: 895243446}
   canvas: {fileID: 1087569704}
 --- !u!4 &1612832800
