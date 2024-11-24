@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - pastPlayer
+  - gasi
   layers:
   - Default
   - TransparentFX

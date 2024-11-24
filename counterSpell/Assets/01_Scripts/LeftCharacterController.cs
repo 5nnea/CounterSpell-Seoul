@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LeftCharacterController : MonoBehaviour
@@ -52,5 +53,11 @@ public class LeftCharacterController : MonoBehaviour
             anim.SetBool("P_Rwalking",false);
         }
         
+    }
+
+    void OnTriggerEnter2D(Collider2D target){
+        if(target.CompareTag("gasi")){
+            UiManager.Instance.Retry();
+        }
     }
 }
